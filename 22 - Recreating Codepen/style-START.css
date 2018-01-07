@@ -1,0 +1,128 @@
+:root {
+  --grey: #343436;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  font-weight: normal;
+  color: #272727;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.codepen
+{
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+}
+
+.pen
+{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  background-color: black;
+  color:white;
+  padding: 10px;
+  grid-gap: 10px;
+  border-bottom: 10px solid var(--grey);
+}
+
+.pen button
+{
+  background-color: var(--grey);
+  border: 0;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.code
+{
+  display: grid;
+  grid-auto-flow:column;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  background-color: #1b2b34;
+  color:white;#1b2b34
+}
+.editor
+{
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.editor__header
+{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  grid-gap:5px;
+  padding: 5px;
+}
+.editor__code
+{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+
+}
+.editor__input
+{
+  background-color:#1b2b34 !important;
+  border:0;
+  color:grey;
+  font-size: 18px;
+}
+.preview
+{
+  display: grid;
+}
+.editor__gutter
+{
+  justify-content: center;
+}
+
+.button
+{
+  background-color: var(--grey);
+  border: 0;
+  color: white;
+  border-radius: 5px;
+}
+.editor__number {
+    display: block;
+    padding: 0 10px;
+}
+.button--small
+{
+  font-size: 12px;
+  padding: 4px;
+}
+.settings
+{
+  padding: 5px;
+  background-color: black;
+}
