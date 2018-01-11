@@ -27,14 +27,14 @@
 
   <style>
     .container {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr 5fr 1fr;
-      grid-template-rows: 150px 150px 100px;
-      grid-template-areas: 
-      "sidebar-1 content sidebar-2"
-      "sidebar-1 content sidebar-2"
-      "footer footer footer"
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: 150px 150px 150px;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "sidebar-1  content   sidebar-2"
+        "sidebar-1  content   sidebar-2"
+        "footer     footer    footer"  
     }
 
     .footer
@@ -61,9 +61,9 @@
       .container
       {
         grid-template-areas: 
-      "content content content"
-      "sidebar-1 sidebar-1 sidebar-2"
-      "footer footer footer" 
+        "sidebar-1 content content"
+        "sidebar-1 sidebar-2 sidebar-2"
+        "footer footer footer"
       }
      }
   </style>
